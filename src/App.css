@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+h1 {
+    margin: 0 0 1rem 0;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main {
+    /* width: 100%; */
+    height: 100vh;
+    background-color: #DBE2EF;
+    /* background-color: #0D6A87; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1.2rem;
+    border: 1px solid #2b2b2b;
+    box-shadow: 0 0 4px rgba(112, 112, 112, 0.2);
+    border-radius: 10px;
+    background-color: #CADCFC;
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+    box-sizing: border-box;
+    max-width: calc(100% - 10px);
+    color: #112D4E;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.input-box {
+    display: flex;
+    border-radius: 5px;
+    /* overflow: hidden; */
+    background-color: white;
+    border: 1px solid #111;
 }
 
-.App-link {
-  color: #61dafb;
+.input-box>input {
+    flex: 1;
+    width: 100%;
+    padding: 8px 5px;
+    border-radius: 0.5rem;
+    border: 0;
+    font-size: 18px;
+    color: #3F72AF;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-box>input:focus {
+    outline: 0;
+}
+
+input {
+    cursor: pointer;
+}
+
+input[type=range] {
+    margin-top: 10px;
+    accent-color: #112D4E;
+}
+
+input[type=range]::before {
+    accent-color: #112D4E;
+}
+
+input:checked {
+    accent-color: #112D4E;
+    color: white;
+}
+
+.input-box>button {
+    cursor: pointer;
+    padding: 8px 12px;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: #112D4E;
+    border: 0px;
 }
